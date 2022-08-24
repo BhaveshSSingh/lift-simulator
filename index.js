@@ -1,4 +1,4 @@
-// Trying to create HTML dynamically
+// HTML dynamically with JS
 
 const create = document.querySelector(".create-btn");
 const addFloor = document.querySelector(".building");
@@ -32,7 +32,32 @@ function addFloorsAndLifts() {
   console.log("function is working");
 }
 
-// Handling the loop for lifts
+// Logging the inputs
+
+create.addEventListener("click", inputHandler);
+
+function inputHandler() {
+  const floorInput = document.getElementById("floor-input").value;
+  const liftInput = document.getElementById("lift-input").value;
+
+  console.log(`${floorInput} Floors and ${liftInput} Lifts`);
+
+  if (!floorInput || !liftInput) {
+    alert("Fill all Fields");
+    return false;
+  }
+
+  if (floorInput <= 0) {
+    alert("Underground Floors isn't available");
+    return false;
+  }
+  if (liftInput <= 0) {
+    alert("We don't have stairs");
+  }
+  return true;
+}
+
+// Handling the loop for Floors and lIfts
 
 let noOfFloors = [];
 let noOfLifts = [];
