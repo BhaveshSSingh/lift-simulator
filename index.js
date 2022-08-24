@@ -48,11 +48,11 @@ function inputHandler() {
   }
 
   if (floorInput <= 0) {
-    alert("Underground Floors isn't available");
+    alert("Our Floors don't go Underground");
     return false;
   }
   if (liftInput <= 0) {
-    alert("We don't have stairs");
+    alert("We've got no stairs");
   }
   return true;
 }
