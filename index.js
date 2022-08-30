@@ -9,7 +9,8 @@ function addFloorsAndLifts() {
   const newFloors = document.createElement("div");
 
   // newFloors.classList.add("Floors");
-  newFloors.innerHTML = `<div class="Floors">
+  newFloors.innerHTML = `
+  <div class="Floors">
             <h4>Floor ${4}</h4>
             <div class="lift-btns">
                 <button id="UP">Up</button>
@@ -21,10 +22,13 @@ function addFloorsAndLifts() {
                 <svg width="40" height="80">
                     <rect width="300" height="100" style="fill:rgb(99, 99, 255);stroke-width:2;stroke:rgb(0,0,0)" />
                 </svg>
-
                 <svg width="40" height="80">
                     <rect width="300" height="100" style="fill:rgb(99, 99, 255);stroke-width:2;stroke:rgb(0,0,0)" />
                 </svg>
+                <svg width="40" height="80">
+                    <rect width="300" height="100" style="fill:rgb(99, 99, 255);stroke-width:2;stroke:rgb(0,0,0)" />
+                </svg>
+                
             </div>
         </div>`;
 
@@ -32,11 +36,8 @@ function addFloorsAndLifts() {
   console.log("function is working");
 }
 
-// Logging the inputs
-
-create.addEventListener("click", inputHandler);
-
-function inputHandler() {
+// Input Handler
+create.addEventListener("click", () => {
   const floorInput = document.getElementById("floor-input").value;
   const liftInput = document.getElementById("lift-input").value;
 
@@ -55,7 +56,7 @@ function inputHandler() {
     alert("We've got no stairs");
   }
   return true;
-}
+});
 
 // Handling the loop for Floors and lIfts
 
