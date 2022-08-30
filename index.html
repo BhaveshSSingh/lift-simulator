@@ -12,15 +12,15 @@
 
         <!-- Input -->
         <div id="input" class="input-form">
-            <h1>Elevator Simulation</h1> 
+            <h1>Elevator Simulation</h1>
             <form action="submit">
-             
+
             </form>
             <h4>Number of Floors</h4>
 
-            <input id="floor-input" type="number" placeholder="Add the number of Floors">
-           <h4>Number of Lifts</h4>
-                <input id="lift-input" type="number" placeholder="Add the number of lifts"></form>
+            <input min="1" id="floor-input" type="number" placeholder="Add the number of Floors">
+            <h4>Number of Lifts</h4>
+            <input min="1" id="lift-input" type="number" placeholder="Add the number of lifts"></form>
             <button class="create-btn">Create</button>
             </form>
         </div>
@@ -28,38 +28,57 @@
         <!-- Main -->
 
         <main id="app" class="building">
-        <div class="Floors">
-            <h4>Floor 2</h4>
-            <div class="lift-btns">
-                <button id="UP">Up</button>
-                <button id="DOWN">Down</button>
+            <div class="Floors">
+                <h4>Floor 2</h4>
+                <div class="lift-btns">
+                    <button id="UP">Up</button>
+                    <button id="DOWN">Down</button>
+                </div>
             </div>
-        </div>
 
-        <div class="Floors">
-            <h4>Floor 1</h4>
-            <div class="lift-btns">
-                <button id="UP">Up</button>
-                <button id="DOWN">Down</button>
+            <div class="Floors">
+                <h4>Floor 1</h4>
+                <div class="lift-btns">
+                    <button id="UP">Up</button>
+                    <button id="DOWN">Down</button>
+                </div>
+
+
+                <!-- lifts -->
+
+
+
+                <div class="lift-section">
+                    <div id="left-door">
+
+                    </div>
+                    <div id="right-door"></div>
+                </div>
+                <div class="lift-section">
+                    <div id="left-door">
+
+                    </div>
+                    <div id="right-door"></div>
+                </div>
+                <div class="lift-section">
+                    <div id="left-door">
+
+                    </div>
+                    <div id="right-door"></div>
+                </div>
+                <div class="lift-section">
+                    <div id="left-door">
+
+                    </div>
+                    <div id="right-door"></div>
+                </div>
             </div>
-            <!-- lifts -->
-            <div>
-                <svg width="40" height="80">
-                    <rect width="300" height="100" style="fill:rgb(99, 99, 255);stroke-width:2;stroke:rgb(0,0,0)" />
-                </svg>
-
-                <svg width="40" height="80">
-                    <rect width="300" height="100" style="fill:rgb(99, 99, 255);stroke-width:2;stroke:rgb(0,0,0)" />
-                </svg>
-            </div>
-        </div>
-
         </main>
 
         <!-- Add a footer linking the github repo -->
 
 
     </body>
-        <script src="./index.js"></script>
+    <script src="./index.js"></script>
 
 </html>
